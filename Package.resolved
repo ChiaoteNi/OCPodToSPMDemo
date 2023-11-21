@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "ntpclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ChiaoteNi/NTPClient.git",
+      "state" : {
+        "revision" : "36fc89802464feffd2a423cb0e6dc5188bb4d30a",
+        "version" : "1.0.4"
+      }
+    }
+  ],
+  "version" : 2
+}

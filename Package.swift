@@ -15,10 +15,15 @@ let package = Package(
             targets: ["OCPodToSPMDemo"]
         ),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/ChiaoteNi/NTPClient.git", from: "1.0.4"),
+    ],
     targets: [
         .target(
             name: "Internals",
+            dependencies: [
+                .product(name: "OCNTPClock", package: "NTPClient")
+            ],
             path: "OCPodToSPMDemo/Internals"
         ),
         .target(
