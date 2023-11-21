@@ -27,6 +27,13 @@ let package = Package(
                 .target(name: "Internals")
             ],
             path: "OCPodToSPMDemo/Classes"
+        ),
+        .testTarget(
+            name: "OCPodToSPMDemoTests",
+            dependencies: [
+                .target(name: "OCPodToSPMDemo")
+            ],
+            path: "OCPodToSPMDemoTests"
         )
     ]
 )
